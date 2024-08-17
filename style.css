@@ -1,0 +1,52 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+  }
+  
+  
+
+.header {
+    color: purple;
+    background-color: white;
+    border-radius: 2px solid white;
+    border-radius: 50px;
+    box-shadow: 0px 6px 38px 0px rgba(255, 255, 255, 0.3);
+    font-size: 40px;
+}
+
+
+.textbox-with-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .textbox-with-checkbox input[type="text"] {
+    padding-right: 30px; /* Adjust based on checkbox size */
+    width: calc(100% - 40px);
+    height: 100%;
+    font-size: 30px;
+  }
+  
+  .textbox-with-checkbox .checkbox {
+    position: absolute;
+    right: 5px; /* Adjust based on desired position */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .checkbox {
+    height: 35px;
+    width: 40px;
+  }
