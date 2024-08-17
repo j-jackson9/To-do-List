@@ -31,7 +31,7 @@ body {
     height: 50px;
     margin-bottom: 5px;
   }
-  
+
   .textbox-with-checkbox input[type="text"] {
     padding-right: 30px; /* Adjust based on checkbox size */
     width: calc(100% - 40px);
@@ -47,6 +47,37 @@ body {
   }
   
   .checkbox {
-    height: 35px;
+    appearance: none; /* Remove default styling */
     width: 40px;
-  }
+    height: 35px;
+    background-color: gray; /* Default background color */
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    margin-right: 10px; /* Space between text input and checkbox */
+}
+
+/* Style for checked state 
+.checkbox:checked {
+    background-color: green;
+}
+
+/* Style for the checkmark */
+.checkbox:checked::after {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 1;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: black; /* Optional: Change text color for visibility */
+}
