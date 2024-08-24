@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> To-do List/h1>
+  <h1> To-do List</h1>
 <br>
   <strong>Built by Jordan Jackson</strong>
 </div>
